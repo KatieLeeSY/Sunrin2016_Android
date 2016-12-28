@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.AndroidMajor.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/19: EditText로 내용변경" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* TextView, Button, EditText"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_1219"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/19과제: 생년월일" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 생년 월 일 을 받는 ‘입력창' 3개를 만든다.\n2. 입력은 숫자만 가능하게 한다.\n3. ‘확인' 버튼을 누르면 다른 화면으로 넘어간다.\n3-1. ‘확인’ 을 눌렀을때 잘못된값 (14월, 123일 등…)의 값이 들어오면 화면을 넘기지 않는다.\n3-2. 잘못된값이 있으면 Toast를 사용해 오류가 있다고 출력\n4. 다음 화면에는 전생이 뭐였는지 ‘텍스트’로 보여준다.\n5. github에 코드를 올린다."
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_1221"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/21과제: 글자 수 카운트" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. editText 는 5줄을 입력받아야한다.\n1-1. 5줄 이상 입력시 editText 사이즈 변화가 없어야한다.\n2. '글자수 카운트' 버튼을 누르면 text에 지금 입력한 글자 수가 출력된다.\n2-1. 글자를 입력할때마다 글자수가 카운트 된다\n3. '초기화' 버튼을 누르면 입력창 내용이 사라진다.\n4. github에 코드를 올린다."
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.btn_mission01:
+                    case R.id.btn_basic:
                         startActivity(new Intent(MainActivity.this, BasicActivity.class));
                         break;
-                    case R.id.btn_mission02:
+                    case R.id.btn_custom:
                         startActivity(new Intent(MainActivity.this, CustomActivity.class));
                         break;
-                    case R.id.btn_mission03:
+                    case R.id.btn_database:
                         startActivity(new Intent(MainActivity.this, DatabaseActivity.class));
                         break;
                 }
